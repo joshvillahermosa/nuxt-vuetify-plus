@@ -1,0 +1,75 @@
+{
+  "name": "nuxt-vuetify-plus-starter-template",
+  "version": "1.0.0",
+  "description": "A starter kit",
+  "author": "Joshua J. Villahermosa <joshvillahermosa@gmail.com>",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt",
+    "commit": "git-cz",
+    "generate": "nuxt generate",
+    "integration:open": "cypress open",
+    "integration": "cypress run",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "mock-server": "nodemon mock-server index.js",
+    "release": "standard-version",
+    "start": "nuxt start",
+    "unit": "jest --config test/unit/jest.config.js --coverage",
+    "unit:watch": "npm run unit -- --watch",
+    "unit:serve-coverage": "http-server test/unit/coverage/lcov-report -p 4001",
+    "test": "npm run lint && npm run unit && npm run integration"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "dependencies": {
+    "@nuxtjs/dotenv": "^1.1.1",
+    "axios": "^0.18.0",
+    "jest": "^23.2.0",
+    "nuxt": "^1.0.0",
+    "vuetify": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.20",
+    "axios-mock-adapter": "^1.15.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.5",
+    "babel-jest": "^23.2.0",
+    "babel-plugin-dynamic-import-node": "^2.0.0",
+    "babel-plugin-transform-imports": "^1.4.1",
+    "cors": "^2.8.4",
+    "cypress": "^3.0.2",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.0.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-cypress": "^2.0.1",
+    "eslint-plugin-html": "^3.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^4.5.0",
+    "express": "^4.16.3",
+    "http-server": "^0.11.1",
+    "husky": "^1.0.0-rc.12",
+    "jest-serializer-vue": "^2.0.2",
+    "jsdom": "^11.11.0",
+    "nodemon": "^1.17.5",
+    "regenerator-runtime": "^0.12.0",
+    "standard-version": "^4.4.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-jest": "^2.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

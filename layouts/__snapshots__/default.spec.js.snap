@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Layout Rendering should match HTML snapshot 1`] = `
+<section>
+  <div class="layout">
+    <nuxt-stub></nuxt-stub>
+  </div>
+</section>
+`;

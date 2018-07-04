@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page Component Rendering should match HTML snapshot 1`] = `
+<div class="layout column justify-center align-center">
+  <h1 data-test="hello-world">Hello World</h1>
+  <h2 data-test="xhr-message">Knocking on the Door</h2>
+</div>
+`;
