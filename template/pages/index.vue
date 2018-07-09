@@ -1,7 +1,8 @@
 <template>
   <v-layout column justify-center align-center>
     <h1 data-test="hello-world">Hello World</h1>
-    <h2 data-test="xhr-message">{{ serverMessage }}</h2>
+    <!-- VUE CLI Strips the handle bar templating, binding HTML for now -->
+    <h2 data-test="xhr-message" v-html="serverMessage"></h2>
   </v-layout>
 </template>
 <script>
@@ -24,10 +25,8 @@ export default {
     log.info('Hello World!')
 
     try {
-      // console.log('HTTP: ', httpRequest.getSampleRequest)
       const { message } = await httpRequest.getSampleRequest()
       this.serverMessage = message
-      console.log('MEssage?', message)
       log.info('HTTP Request Received:', message)
     } catch(error) {
       throw new Error(error)

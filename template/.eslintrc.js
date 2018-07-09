@@ -26,6 +26,15 @@ module.exports = {
   rules: {
     "semi": [2, "never"],
     "no-console": "off",
-    "vue/max-attributes-per-line": "off"
+    "vue/max-attributes-per-line": "off",
+    "vue/html-self-closing": ["error", {
+      "html": {
+        "void": "any",
+        "normal": "any",
+        "component": "any"
+      },
+      "svg": "always",
+      "math": "always"
+    }]
   }
 }

@@ -1,20 +1,20 @@
 # Dependencies
-node_modules
+template/node_modules
 
 # Environment Variables
-.env
+template/.env
 
 # Logs
-npm-debug.log
+template/npm-debug.log
 
 # Nuxt build
-.nuxt
+template/.nuxt
 
 # Nuxt generate
-dist
+template/dist
 
 # Tests
 ## Unit
-test/unit/coverage
+template/test/unit/coverage
 ## Integration
-test/integration/videos
+template/test/integration/videos

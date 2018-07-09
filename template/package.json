@@ -1,8 +1,8 @@
 {
-  "name": "nuxt-vuetify-plus-starter-template",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "A starter kit",
-  "author": "Joshua J. Villahermosa <joshvillahermosa@gmail.com>",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
   "private": true,
   "scripts": {
     "build": "nuxt build",
