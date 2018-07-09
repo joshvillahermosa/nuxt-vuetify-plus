@@ -36,7 +36,7 @@ $ npm install # Or yarn install
 - [x] Update Docs
 - ~~[ ] Add NSP~~ _Needs evaluation_
 - [ ] Integration tests to spawn live server
-- [ ] Create using Vue Cli
+- [x] Create using Vue Cli
 - [ ] Document Generator
 - [ ] Fix Async Created Test in `index.vue`
 - [ ] Update Store
